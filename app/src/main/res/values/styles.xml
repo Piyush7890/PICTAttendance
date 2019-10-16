@@ -1,0 +1,321 @@
+<resources>
+
+
+    <style name="Application" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionButtonStyle">@style/ActionButton</item>
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:actionButtonStyle">@style/ActionButton</item>
+        <item name="toolbarBorder">@android:color/transparent</item>
+        <item name="snackBarText">@color/snackBarText</item>
+<item name="logoCircle">#e1e1e1</item>
+        <item name="toolbarColor">@android:color/white</item>
+        <item name="selector">@drawable/rect_selector</item>
+        <!--<item name="chipTextColor">#757575</item>-->
+        <item name="snackbarBackground">#202124</item>
+        <!--<item name="snackbarElevation">0dp</item>-->
+        <item name="headerColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="percentageColor">@color/percentageColor</item>
+        <item name="emptyItemTitle">@color/textColorPrimary</item>
+        <item name="iconColor">#757575</item>
+        <item name="subjectTitleColor">@color/subjectTitleColorDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="gradientColor">@color/windowBackgroundColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="secondaryTextColor">#757575</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="drawerColor">?android:windowBackground</item>
+
+        <item name="android:statusBarColor">#c1c1c1</item>
+        <item name="android:textColorTertiary">@color/text_color_tertiary</item>
+        <item name="dividerColor">@color/dividerColorLight</item>
+        <item name="subTextColor">#5F6368</item>
+        <item name="dashLineColor">#e0e0e0</item>
+        <item name="isDark">false</item>
+    </style>
+
+    <style name="PopupMenu" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:background">@drawable/overflow_bg</item>
+        <item name="android:textColor">#e8eaed</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="toolbarBorder">?toolbarColor</item>
+        <item name="actionBarPopupTheme">@style/PopupMenu</item>
+        <item name="logoCircle">#9aa0a6</item>
+        <item name="android:actionButtonStyle">@style/ActionButton</item>
+        <item name="snackBarText">@color/snackBarTextDark</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="selector">@drawable/rect_selector_dark</item>
+        <item name="isDark">true</item>
+        <item name="snackbarBackground">@color/snackbarDark</item>
+        <item name="emptyItemTitle">#ededed</item>
+        <item name="headerColor">@color/headerColorDark</item>
+        <item name="dashLineColor">#5a5a5a</item>
+        <item name="percentageColor">@color/percentageColorDark</item>
+        <item name="gradientColor">@color/windowBackgroundDark</item>
+        <item name="iconColor">#B9B9B9</item>
+        <item name="subTextColor">@color/textSecondaryDark</item>
+        <item name="secondaryTextColor">@color/textSecondaryDarker</item>
+        <item name="toolbarColor">@color/dialogBackgroundDark</item>
+        <item name="subjectTitleColor">@color/subjectTitleColorLight</item>
+        <item name="android:windowBackground">@color/windowBackgroundDark</item>
+        <item name="drawerColor">?android:windowBackground</item>
+        <item name="colorPrimary">@color/windowBackgroundDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary_dark_dark</item>
+        <item name="colorAccent">@color/colorAccentDark</item>
+        <item name="dividerColor">@color/dividerColorDark</item>
+    </style>
+
+    <style name="AppThemeDark.Black">
+        <item name="toolbarBorder">#202124</item>
+<item name="dashLineColor">#202124</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="drawerColor">#121212</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="dividerColor">#1f1f1f</item>
+        <item name="gradientColor">@color/black</item>
+        <item name="toolbarColor">#121212</item>
+
+    </style>
+
+<style name="Toolbar" parent="Widget.AppCompat.Toolbar">
+    <item name="titleTextAppearance">@style/ToolbarTitle</item>
+    <item name="android:windowActionBarOverlay">true</item>
+<item name="background">@android:color/transparent</item>
+    <item name="contentInsetStartWithNavigation">0dp</item>
+    <item name="contentInsetStart">0dp</item>
+</style>
+
+
+
+<style name="AppTheme.Launcher">
+
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+</style>
+
+    <style name="AppTheme.LauncherDark">
+<item name="headerColor">@color/windowBackgroundDark</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+
+
+    <style name="AppTheme.Login">
+        <item name="snackBarText">@color/snackBarText</item>
+        <item name="editTextLabel">@color/gray_850</item>
+        <item name="dialogBackground">@android:color/white</item>
+        <item name="android:windowBackground">@color/scrim</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="snackbarBackground">#202124</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+
+
+    </style>
+<style name="AppTheme.Login.Dark">
+    <item name="colorPrimary">@color/colorAccentDark</item>
+    <item name="snackBarText">@color/snackBarTextDark</item>
+    <item name="subjectTitleColor">@color/subjectTitleColorLight</item>
+    <item name="editTextLabel">@color/gray_200</item>
+    <item name="dialogBackground">@color/dialogBackgroundDark</item>
+    <item name="snackbarBackground">@color/snackbarDark</item>
+    <item name="colorAccent">@color/colorAccentDark</item>
+    <item name="android:statusBarColor">@color/windowBackgroundDark</item>
+</style>
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/bottom_sheet_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_sheet_slide_out</item>
+    </style>
+
+    <style name="AppTheme.Login.Dark.Black">
+        <item name="android:statusBarColor">#000000</item>
+        <item name="dialogBackground">@color/dialogBackgroundBlack</item>
+
+    </style>
+
+<style name="AppTheme.Login.Settings">
+    <item name="selector">@drawable/rect_strong_selector</item>
+    <item name="android:statusBarColor">?gradientColor</item>
+    <item name="preferenceItemBackground">@android:color/white</item>
+    <item name="gradientColor">#f3f3f4</item>
+<item name="android:windowEnterTransition">@transition/settings_transition</item>
+<item name="android:windowReturnTransition">@transition/settings_transition</item>
+</style>
+
+
+    <style name="PreferenceItem">
+        <item name="android:elevation">1dp</item>
+        <item name="android:foreground">?attr/selector</item>
+        <item name="android:background">?attr/preferenceItemBackground</item>
+
+    </style>
+
+
+    <style name="AppThemeDark.Settings">
+        <item name="selector">@drawable/rect_strong_selector_dark</item>
+        <item name="preferenceItemBackground">#2b2b2b</item>
+        <item name="gradientColor">@color/windowBackgroundDark</item>
+        <item name="android:windowEnterTransition">@transition/settings_transition</item>
+        <item name="android:windowReturnTransition">@transition/settings_transition</item>
+        <item name="android:windowBackground">@color/scrim</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+<style name="AppThemeDark.Settings.Black">
+    <item name="gradientColor">@color/black</item>
+    <item name="android:windowBackground">@color/black</item>
+    <item name="android:statusBarColor">@color/black</item>
+</style>
+    <style name="HeaderName" parent="TextAppearance.SubjectTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+
+    <style name="TextAppearance.SubjectTitle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.005</item>
+        <item name="android:textColor">?attr/subjectTitleColor</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+<style name="TextSwitcher">
+    <item name="android:textSize">17sp</item>
+    <item name="android:textColor">?attr/subTextColor</item>
+    <item name="android:fontFamily">@font/work_sans_medium</item>
+</style>
+
+
+<style name="Percentage">
+    <item name="android:textColor">?attr/percentageColor</item>
+    <item name="android:fontFamily">@font/montserrat</item>
+    <item name="android:textSize">22sp</item>
+</style>
+
+    <style name="Percentage.TotalPercent">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">?attr/percentageColor</item>
+    </style>
+
+    <style name="TextAppearance.Content" parent="@style/TextAppearance.AppCompat.Body1">
+
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="TextAppearance.FloatLabelHint" parent="@android:style/TextAppearance.Material.Caption">
+        <item name="android:textColor">?android:colorPrimary</item>
+    </style>
+
+    <style name="RadioButton" parent="@style/TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">?attr/subjectTitleColor</item>
+    </style>
+
+
+    <style name="EditText" >
+        <item name="android:backgroundTint">@color/gray_200</item>
+        <item name="android:alpha">0.8</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="DialogSignIn" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:background">@drawable/dialog_bg</item>
+        <item name="android:elevation">24dp</item>
+    </style>
+
+    <style name="TextAppearance.DialogTitle" parent="@style/TextAppearance.AppCompat.Title">
+        <item name="android:textSize">22sp</item>
+
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+
+    <style name="EventFilters">
+
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="outlineWidth">1dp</item>
+        <item name="clearIcon">@drawable/tag_clear</item>
+        <item name="foreground">?selectableItemBackground</item>
+        <item name="showIcons">true</item>
+    </style>
+
+    <style name="Chip">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="selectedTextColor">?android:textColorPrimaryInverse</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:strokeColor">?attr/dashLineColor</item>
+    </style>
+    <style name="ActionButton" parent="@android:style/Widget.ActionButton">
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+    <style name="TextAppearance.AppCompat.PreferenceTitle">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:textColor">?attr/subjectTitleColor</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="TextAppearance.DialogContent" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="loginButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">@drawable/login_button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:letterSpacing">0.025</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/gray_200</item>
+        <item name="passwordToggleTint">@color/gray_200</item>
+        <item name="android:colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+<style name="NavigationDrawer">
+    <item name="android:listPreferredItemPaddingStart">24dp</item>
+    <item name="android:listPreferredItemPaddingLeft">24dp</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:fontFamily">@font/montserrat</item>
+</style>
+</resources>

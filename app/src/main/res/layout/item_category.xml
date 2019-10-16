@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="category"
+            type="com.piyush.pictattendance.model.Category"/>
+    </data>
+
+
+<com.piyush.pictattendance.ui.activities.views.Chip
+
+    style="@style/Chip"
+    android:layout_width="wrap_content"
+    app:setText="@{category.text}"
+    app:checkedColor="@{category.color}"
+    android:layout_height="wrap_content"
+    android:id="@+id/chip"
+    android:layout_marginEnd="16dp"
+    />
+</layout>

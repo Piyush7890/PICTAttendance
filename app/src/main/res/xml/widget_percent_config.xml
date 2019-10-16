@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    android:initialLayout="@layout/widget_percent"
+    android:initialKeyguardLayout="@layout/widget_percent"
+    android:updatePeriodMillis="0"
+    android:resizeMode="vertical|horizontal"
+    android:widgetCategory="home_screen|keyguard"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

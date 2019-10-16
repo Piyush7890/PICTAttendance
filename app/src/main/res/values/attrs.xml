@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <declare-styleable name="AnimatedDashLine">
+        <attr name="dashLineColorr" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="GradientFrameLayout">
+        <attr name="gradientColorr" format="color|reference"/>
+        <attr name="gravity" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="GradientRecyclerView">
+        <attr name="gradientColorrr" format="color|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ExpansionLayout">
+        <attr name="expansion_expanded" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="categoryFilterViewStyle" format="reference" />
+
+    <attr name="toolbarColor" format="color|reference"/>
+    <attr name="toolbarBorder" format="color|reference"/>
+    <attr name="logoColor" format="color|reference"/>
+    <attr name="dialogBackground" format="color|reference"/>
+    <attr name="editTextLabel" format="color|reference"/>
+    <attr name="emptyItemTitle" format="color|reference"/>
+    <attr name="gradientColor" format="color|reference"/>
+    <attr name="headerColor" format="color|reference"/>
+    <attr name="dashLineColor" format="color|reference"/>
+    <attr name="emptyItemSubText" format="color|reference"/>
+<attr name="subjectTitleColor" format="color|reference"/>
+<attr name="secondaryTextColor" format="color|reference"/>
+    <attr name="iconColor" format="color|reference"/>
+    <attr name="dividerColor" format="color|reference"/>
+    <attr name="drawerColor" format="color|reference"/>
+    <attr name="percentageColor" format="color|reference"/>
+    <attr name="subTextColor" format="color|reference"/>
+    <attr name="snackBarText" format="color|reference"/>
+    <attr name="logoCircle" format="color|reference"/>
+    <attr name="chipTextColor" format="color|reference"/>
+    <attr name="isDarkk" format="boolean"/>
+    <attr name="preferenceItemBackground" format="color|reference"/>
+<attr name="selector" format="reference"/>
+    <attr name="chipStyle" format="reference" />
+
+    <declare-styleable name="Chip">
+        <attr name="android:checked" />
+        <attr name="android:text" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="android:color" />
+        <attr name="android:padding" />
+        <attr name="android:strokeColor" />
+        <attr name="selectedTextColor" format="color|reference"/>
+        <attr name="dotColor" format="color|reference"/>
+        <attr name="outlineWidth" format="dimension" />
+        <attr name="clearIcon" format="reference" />
+        <attr name="foreground" format="reference" />
+        <attr name="showIcons" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FabTransform">
+        <attr name="fabColor" format="color" />
+        <attr name="fabIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FadingSnackbar">
+        <attr name="buttonText" format="string"/>
+    </declare-styleable>
+
+        <attr name="snackbarBackground" format="color|reference"/>
+        <attr name="snackbarElevation" format="dimension"/>
+
+
+<declare-styleable name="RefreshLayout">
+    <attr name="progressColor" format="reference|color"/>
+    <attr name="circleBackground" format="color|reference"/>
+</declare-styleable>
+
+
+    <declare-styleable name="InnerGraph">
+        <attr name="isDark" format="boolean"/>
+    </declare-styleable>
+
+
+
+
+
+</resources>

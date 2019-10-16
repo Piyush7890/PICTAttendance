@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.piyush.pictattendance.ui.activities.views.LoadingView
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+android:paddingTop="80dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include layout="@layout/loading_subject_item"/>
+    <include layout="@layout/loading_subject_item"/>
+        <include layout="@layout/loading_subject_item"/>
+        <include layout="@layout/loading_subject_item"/>
+
+
+    </LinearLayout>
+
+
+</com.piyush.pictattendance.ui.activities.views.LoadingView>

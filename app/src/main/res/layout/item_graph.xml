@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="68dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.piyush.pictattendance.ui.activities.views.InnerGraph
+        app:isDark="?attr/isDark"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/graph"
+        />
+    <TextView
+        android:textColor="?attr/subTextColor"
+        android:gravity="center"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:textSize="12sp"
+        tools:text="2nd"
+        android:letterSpacing="0.025"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="?attr/subTextColor"
+        android:letterSpacing="0.025"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/month"
+        tools:text="OCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        />
+
+
+
+</LinearLayout>

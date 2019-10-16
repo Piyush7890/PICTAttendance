@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/empty_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.piyush.pictattendance.ui.activities.views.AnimatedDashLine
+        app:dashLineColorr="?attr/dashLineColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:tint="?attr/emptyItemTitle"
+            android:src="@drawable/ic_scc"
+            android:layout_margin="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    <TextView
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="?attr/emptyItemTitle"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:text="@string/login_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:fontFamily="sans-serif-medium"
+        android:textSize="15sp"
+        android:textColor="?attr/subTextColor"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_first_desc"
+        />
+    
+    
+    </LinearLayout>
+    
+</FrameLayout>

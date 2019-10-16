@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="isLoggedIn"
+            type="boolean"/>
+
+    </data>
+    <android.support.v4.widget.DrawerLayout
+        tools:openDrawer="start"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+    android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:elevation="0dp"
+        app:elevation="0dp">
+        <android.support.design.card.MaterialCardView
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/toolbarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:strokeColor="?toolbarBorder"
+            app:strokeWidth="1dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_scrollFlags="scroll">
+        <android.support.v7.widget.Toolbar
+            android:elevation="0dp"
+            android:background="?toolbarColor"
+            app:titleMargin="0dp"
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/ic_menu_black_24dp"
+            style="@style/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:title="@string/app_name" />
+        </android.support.design.card.MaterialCardView>
+
+
+        <com.piyush.pictattendance.ui.activities.views.GradientRecyclerView
+            app:gradientColorrr="?attr/gradientColor"
+            android:visibility="@{isLoggedIn? View.VISIBLE : View.GONE}"
+            app:layout_scrollFlags="scroll"
+            android:paddingStart="24dp"
+            android:clipToPadding="false"
+            android:paddingEnd="0dp"
+            android:id="@+id/category_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:overScrollMode="never" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <com.piyush.pictattendance.ui.activities.views.RefreshLayout
+
+        app:enabled="@{isLoggedIn}"
+        app:progressColor="?attr/subjectTitleColor"
+        app:circleBackground="?attr/headerColor"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/subjectsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="80dp"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+           <include
+               android:id="@+id/header_layout"
+               app:isLoggedIn="@{isLoggedIn}"
+               layout="@layout/layout_header"/>
+
+
+        </FrameLayout>
+    </com.piyush.pictattendance.ui.activities.views.RefreshLayout>
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="end|bottom"
+        android:visibility="@{isLoggedIn? View.GONE : View.VISIBLE}"
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:src="@drawable/ic_add_black_24dp" />
+
+
+
+    <include
+        android:visibility="@{isLoggedIn? View.GONE : View.VISIBLE}"
+        android:id="@+id/empty_item_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        layout="@layout/empty_item" />
+    <!--<include-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/loading_view"-->
+        <!--layout="@layout/loading_view"/>-->
+    <com.piyush.pictattendance.ui.activities.views.FadingSnackbar
+        app:buttonText="Cancel"
+        android:id="@+id/snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+        <android.support.design.widget.NavigationView
+
+            android:theme="@style/NavigationDrawer"
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/main_menu" >
+            <LinearLayout
+                android:background="?android:windowBackground"
+                android:paddingBottom="28dp"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_marginBottom="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?attr/dividerColor"/>
+                <TextView
+                    android:paddingStart="16dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="start"
+                    android:text="Developed by"
+                    android:textColor="?android:textColorSecondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:paddingStart="16dp"
+                    android:letterSpacing="0.020"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="16sp"
+                    android:text="Piyush Mamidwar"
+                    android:layout_gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:paddingEnd="32dp"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:id="@+id/mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@drawable/footer_icon"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_linkedin"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/github"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@drawable/footer_icon"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_github"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/instagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:background="@drawable/footer_icon"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_instagram"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</layout>

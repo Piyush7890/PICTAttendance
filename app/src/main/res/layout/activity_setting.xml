@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="isDark"
+            type="boolean"/>
+
+        <variable
+            name="isWidgetDark"
+            type="boolean"/>
+        <import type="android.view.View"/>
+    </data>
+<RelativeLayout
+    android:clipChildren="false"
+    android:background="?attr/gradientColor"
+    android:id="@+id/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.SettingActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_alignParentTop="true"
+        app:title="Settings"
+        android:layout_gravity="top"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:elevation="1dp"
+        android:background="?attr/preferenceItemBackground"
+        android:id="@+id/notification_pref_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/container"
+            android:padding="16dp"
+            android:background="?attr/selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+       <TextView
+           style="@style/TextAppearance.AppCompat.PreferenceTitle"
+           android:text="Update attendance every "
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="?attr/subTextColor"
+            android:layout_marginTop="4dp"
+            android:id="@+id/time_update_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RadioGroup
+            android:paddingStart="16dp"
+            android:paddingBottom="16dp"
+            android:paddingEnd="0dp"
+            android:visibility="gone"
+            android:id="@+id/radio_group"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <RadioButton
+                android:id="@+id/three_hr"
+                android:text="@string/three_hrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/six_hr"
+                android:text="@string/six_hrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/one_day"
+                android:text="@string/one_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/never"
+                android:text="@string/never"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+        </RadioGroup>
+        
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:onClick="rateOnPlayStore"
+      style="@style/PreferenceItem"
+        android:layout_below="@id/dark_wg_parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/open_in_play_store"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/rate_on_ps"
+            android:text="Rate on Play Store"
+            style="@style/TextAppearance.AppCompat.PreferenceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/dark_wg_parent"
+        style="@style/PreferenceItem"
+        android:layout_below="@id/notification_pref_layout"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="Dark Widgets"
+            style="@style/TextAppearance.AppCompat.PreferenceTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:checked="@{isWidgetDark}"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/dark_wg_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:visibility="@{ isDark ? View.VISIBLE : View.GONE }"
+        android:clipChildren="false"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="bottom|center_horizontal"
+        >
+
+
+
+        <com.piyush.pictattendance.ui.activities.views.SlidingImageView
+            android:src="@drawable/preview_icon"
+            android:id="@+id/preview_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+
+</RelativeLayout>
+</layout>

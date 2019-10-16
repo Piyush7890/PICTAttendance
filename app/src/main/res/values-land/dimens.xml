@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_margin">16dp</dimen>
+    <dimen name="subject_margin">32dp</dimen>
+    <dimen name="subject_margin_end">24dp</dimen>
+    <dimen name="header_padding_horizontal">16dp</dimen>
+    <dimen name="header_padding_vertical">18dp</dimen>
+
+
+
+</resources>

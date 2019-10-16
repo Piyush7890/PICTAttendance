@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="isLoggedIn"
+            type="boolean"/>
+
+    </data>
+
+<com.piyush.pictattendance.ui.activities.views.GradientFrameLayout
+    app:gravity="1"
+    android:visibility="@{isLoggedIn? View.VISIBLE : View.GONE}"
+    app:gradientColorr="?attr/gradientColor"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:foreground="@drawable/ripple"
+        android:paddingBottom="@dimen/header_padding_vertical"
+        android:paddingTop="@dimen/header_padding_vertical"
+        android:paddingEnd="@dimen/header_padding_horizontal"
+        android:paddingStart="@dimen/header_padding_horizontal"
+        android:id="@+id/header_inner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/header_margin"
+        android:background="@drawable/header_bg">
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/student_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@id/total_percent"
+            android:maxLines="1"
+            style="@style/HeaderName"
+          />
+
+        <TextView
+            android:id="@+id/student_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_name"
+            android:layout_alignParentStart="true"
+            android:fontFamily="sans-serif-medium"
+            android:fontFeatureSettings="scmp"
+            android:letterSpacing="0.02"
+            android:textColor="?attr/subTextColor"
+            android:textSize="13sp" />
+
+        <com.piyush.pictattendance.ui.activities.views.CustomTickerView
+            android:gravity="end"
+            app:ticker_animationDuration="500"
+            android:id="@+id/total_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="@style/Percentage.TotalPercent"
+            tools:text="99.86" />
+
+        <android.support.constraint.ConstraintLayout
+            android:foreground="@null"
+            android:id="@+id/graph_parent"
+            android:visibility="gone"
+            android:layout_below="@id/student_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                app:layout_constraintTop_toTopOf="parent"
+                android:overScrollMode="never"
+                android:paddingStart="16dp"
+                android:clipToPadding="false"
+                android:paddingEnd="16dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:id="@+id/graph" />
+            <View
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="28dp"
+                android:layout_height="0dp"
+                android:background="@drawable/graph_gradient_right"
+                app:layout_constraintTop_toTopOf="@id/graph"
+                app:layout_constraintBottom_toBottomOf="@id/graph"/>
+            <View
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="28dp"
+                android:layout_height="0dp"
+                android:background="@drawable/graph_gradient_left"
+                app:layout_constraintTop_toTopOf="@id/graph"
+                app:layout_constraintBottom_toBottomOf="@id/graph"/>
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+</com.piyush.pictattendance.ui.activities.views.GradientFrameLayout>
+</layout>

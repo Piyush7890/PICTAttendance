@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PICT Attendance</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="login_first">You need to login first.</string>
+    <string name="login_first_desc">Press the \'+\' button to login</string>
+    <string name="dialog_login_title">Login to view your attendance</string>
+    <string-array name="categories">
+        <item>Lecture</item>
+        <item>Practical</item>
+        <item>Tutorial</item>
+        <item>Workshop</item>
+        <item>Unknown</item>
+    </string-array>
+
+
+    <string name="three_hrs">3 Hours</string>
+    <string name="six_hrs">6 Hours</string>
+    <string name="twelve_hrs">12 Hours</string>
+    <string name="one_day">24 Hours</string>
+    <string name="never">Never</string>
+
+
+
+</resources>

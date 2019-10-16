@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="8dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/title"
+        android:textAppearance="@style/TextAppearance.SubjectTitle"
+        android:layout_width="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/change"
+            android:textAppearance="@style/Percentage"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="?subTextColor"
+            android:id="@+id/prev"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/Percentage"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/ic_arrow_pointing_to_right"
+            android:id="@+id/arrow"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="48dp"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/curr"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/Percentage"
+            android:textSize="20sp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="?dividerColor"
+    android:layout_marginTop="8dp"
+    />
+</LinearLayout>

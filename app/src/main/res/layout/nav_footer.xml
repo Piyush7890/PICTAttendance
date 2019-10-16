@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:layout_gravity="bottom"
+    android:gravity="end"
+    android:paddingBottom="32dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<FrameLayout
+    android:id="@+id/mail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:background="@drawable/footer_icon"
+
+        android:padding="8dp"
+        android:src="@drawable/ic_gmail"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+</FrameLayout>
+    <FrameLayout
+        android:id="@+id/github"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/footer_icon"
+            android:padding="8dp"
+            android:src="@drawable/ic_github"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/instagram"
+        android:background="@drawable/footer_icon_fg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/footer_icon_bg"
+            android:padding="8dp"
+            android:src="@drawable/ic_instagram"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+    </FrameLayout>
+</LinearLayout>

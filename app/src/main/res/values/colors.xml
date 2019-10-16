@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <color name="ripple_strong_material_light">#1f000000</color>
+    <color name="ripple_material_light" tools:override="true">#14000000</color>
+    <color name="ripple_strong_material_dark" >#33ffffff</color>
+    <color name="ripple_material_dark" tools:override="true">#3Bffffff</color>
+
+
+
+
+
+
+
+
+    <color name="colorPrimary">#1e88e5</color>
+    <color name="colorPrimaryDark">#137edc</color>
+    <color name="colorAccent">#64cfe8</color>
+    <color name="text_color_tertiary">#dadce0</color>
+    <color name="scrim">#33000000</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textCOlorSecondary">#99000000</color>
+    <color name="percentageColor">#424242</color>
+    <color name="windowBackgroundColor">@android:color/white</color>
+<color name="dark_icon">#99000000</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_600">#55191818</color>
+<color name="grey_700">#616161</color>
+
+    <color name="Lecture">#1db8d2</color>
+    <color name="Practical">#8da0fc</color>
+    <color name="Tutorial">#fcd230</color>
+    <color name="Workshop">#39c79d</color>
+    <color name="Unknown">#999999</color>
+    <color name="highlight_light">#55ffffff</color>
+<color name="dividerColorLight">#EFEFEF</color>
+<color name="outlineColor">#dadce0</color>
+
+    <array name="categoryColor">
+        <item>@color/Lecture</item>
+        <item>@color/Practical</item>
+        <item>@color/Tutorial</item>
+        <item>@color/Workshop</item>
+        <item>@color/Unknown</item>
+
+    </array>
+
+    <!--<color name="percentageColorDark">#DEffffff</color>-->
+    <color name="percentageColorDark">@color/subjectTitleColorLight</color>
+    <!--<color name="dividerColorDark">#333333</color>-->
+    <color name="dividerColorDark">#313131</color>
+
+<color name="colorPrimary_dark_dark">#1b1b1b</color>
+<color name="colorPrimary_dark">#212121</color>
+    <color name="colorAccentDark">#8bb4f2</color>
+    <!--<color name="colorAccentDark">#5bda80</color>-->
+    <!--<color name="windowBackgroundDark">#292929</color>-->
+    <color name="windowBackgroundDark">#141414</color>
+    <color name="textSecondaryDarker">#757575</color>
+    <!--<color name="textSecondaryDark">#9e9e9e</color>-->
+    <color name="textSecondaryDark">#B9B9B9</color>
+    <color name="headerColorDark">#313235</color>
+    <color name="iconColor">#bdbdbd</color>
+    <color name="logoColorDark">#d9ffffff</color>
+    <!--<color name="snackbarDark">#e8eaed</color>-->
+    <color name="snackbarDark">#202124</color>
+    <!--<color name="snackBarText">#e2e2e3</color>-->
+    <color name="snackBarText">#ffffff</color>
+    <!--<color name="snackBarTextDark">#525659</color>-->
+    <color name="snackBarTextDark">#ffffff</color>
+    <!--<color name="snackbarDark">#1b1b1b</color>-->
+<color name="black">#000000</color>
+    <!--<color name="subjectTitleColorLight">#deffffff</color>-->
+    <color name="subjectTitleColorLight">#e8eaed</color>
+    <color name="subjectTitleColorDark">#de000000</color>
+
+
+    <!--<color name="dialogBackgroundDark">#303030</color>-->
+    <color name="dialogBackgroundDark">#262626</color>
+    <color name="dialogBackgroundBlack">#121212</color>
+
+    <color name="gray_850">#616161</color>
+
+    <color name="gray_200">#9e9e9e</color>
+    <color name="colorTextGrey2nd">#bdbdbd</color>
+
+    <color name="red">#f44336</color>
+    <color name="green">#42c86e</color>
+
+</resources>
