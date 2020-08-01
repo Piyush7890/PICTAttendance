@@ -24,3 +24,11 @@ Attendance tracking app for PICT college students.
     <td><img src="app/src/main/5.png"/></td>
   </tr>
 </table>
+
+## Download
+
+
+<a href='https://play.google.com/store/apps/details?id=com.piyush.pictattendance'>
+	<img alt='Get it on Google Play'
+		src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
+		height="116" width="300"/>
